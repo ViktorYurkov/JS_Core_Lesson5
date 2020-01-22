@@ -1,0 +1,40 @@
+function show(data) {
+    console.log(data);
+}
+
+//Завдання 1
+var user = {};
+var user = {
+    name:'ПИЛИП',
+    surname:'ШЕВЧЕНКО',
+}
+show(user);
+user.name = 'СЕРГІЙ';
+show(user);
+delete user['name'];
+show(user);
+
+//Завдання 2
+var EmployeeSalaries = {
+    name: {	
+ 	n01: "Петро",  
+    n02: "Пилип",
+    n03: "Василь",
+    n04: "Катя",
+    n05: "Сергій",
+    },
+    summa: {	
+ 	s01: 14456,  
+    s02: 23999,
+    s03: 24511,
+    s04: 6789,
+    s05: 23499,
+    }
+};
+
+var l=0;
+for(s in EmployeeSalaries.summa){
+   l+=EmployeeSalaries.summa[s];
+}
+
+show('Результат:' + l);
